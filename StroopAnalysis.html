@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stroop Analysis</title>
+  </head>
+  <body>
+    <h3>1)</h3>
+    <p>Dependent variable: This is the time recorded for participants to complete eithere tasks--to read the colour of the ink, with the congruent and incongruent set. The independent variable is the word conditions, whether they are congruent or not. The word conditions are controlled by the proctors and program, thus, as the independent variable, are used to find results.</p>
+
+
+
+
+    <h3>2)</h3>
+    <p>H<sub>0</sub>: &mu;<sub>incongruent</sub>-  &mu;<sub>congruent</sub> = 0 
+      <br>H<sub>alt</sub>: &mu;<sub>incongruent</sub>- &mu;<sub>congruent</sub> &gt; 0
+       
+      <br>To better explain this in terms of the population, we want to see if the average difference between the congruent values and incongruent values is statistically significant. Therefore our null hypothesis is that the difference between the two tests for the average population is zero.
+      <br>Our alternative hypothesis will be that the incongruent mean is greater than the congruent mean, and that therefore the average population response time is greater than zero. 
+
+
+      <br> Based off these hyposthese, we will conduct a one-tailed t-test for the p-value. 
+      <br> The kind of statistical test do I expect to perform will be based on the difference in time between the congruent and incongruent test. I will be performing a dependent-samples t-test, with a one-tailed t-test for the p value. It will be a dependent t-test since we do not have population parameters, and we want to see if the time spent is positively increasing the results. The subjects in both tests are the same, therefore we have two related groups of the same subjects, and we are testing for an increase in the time recorded within the subjects.   
+    </p>
+    <h3>3)</h3>
+    <p>
+      Given the sample data set, I was able to calculate a sample mean and median.
+      <ul>Congruent:
+        <li>Mean:14.051</li>
+        <li>Median:14.357</li>
+        <li>Standard Deviation: 3.559</li>
+      </ul>
+      <ul>Incongruent:
+        <li>Mean:22.016</li>
+        <li>Median:21.018</li>
+        <li>Standard Deviation:4.797
+      </ul>
+      You can see here that there was a significant difference between the two tests, with the incongruent values lagging behind by a considerable amount of seconds. From these initial descriptives, I was also able to descern the mean difference, as well as the standard deviation of differences as the following:
+      <ul>
+        <li>Mean Difference: 7.96</li>
+        <li>Standard Deviation of Differences: 4.86</li>
+        <li>Standard Error of Mean: 0.993</li>
+      </ul>
+    
+    </p>
+    <h3>4)</h3>
+    <p>
+      <img src="DualComparison.png">
+     <br> Here is a graph displaying both of the test results by frequency and time. I chose to use both data sets on one graph because it reflects a rather consistent pattern--the incongruent values are in a relatively similar shape to the congruent values, but shifted to the right. 
+    </p>
+    <h3>5) Results Section</h3>
+    <p>
+      From the previous descriptives, we know that &mu;<sub>cong</sub> = 14.05, and that &mu;<sub>incong</sub>=22.02, which we will label as x&#772. Given these, the mean difference is x&#772 - &mu;<sub>cong</sub> = 7.96. n = 24, therefore the degree of freedom, ie df = 23. I chose an alpha level of .05 to reflect the critical region, which gave us a t-critical value of 1.714.
+      <br> At this point, this is all the information we had, and were able to calculate the t-statistic.
+      <ul>
+        <li>x&#772 = 22.02</li>
+        <li>&mu;<sub>cong</sub> = 14.05</li>
+        <li>mean difference = 7.96</li>
+        <li>n = 24</li>
+        <li>df = 23</li>
+        <li>&alpha; = .05</li>
+        <li>t-critical value = 1.714</li>
+        <li>S = 4.86</li>
+        <li>Sem = 0.993</li>
+        <li>t-statistic = mean difference/Sem = 8.02</li>
+      </ul>
+      Upon reflection, given that the t-statistic is &gt; t-critical value(8.02 &gt; 1.714), the t-statistic falls into the critical region, and is therefore stastically significant, since the p value &gt; .05. After computing, p < .0001 for a one-tailed test, therefore we can reject the null hypothesis.
+
+      <br>Now I calculated Cohen's d and found it to be 1.64, which showed that the two means are more than one and a half standard deviations apart from each other. In addition, I calculated  the r<sup>2</sup> = 0.74, which reflects the differences in the times within the sample-- that is to say, approximately 74% of sample was affected by the change in word condition. When taking the margin of error for a 95% confidence interval, I received an interval of (6.26, 9.67). This is the interval at which the values would most likely fall.
+      <br>
+      These results suggest that given that there is a significant delay in time recorded for the incongruent test, that the word condition does in fact, increase the amount of  time it takes to respond when the word condition is incongruent. This is shown through the one-tailed test, and indeed match up with my expectations. When the word colour does not match with the corresponding word, then there must be more time allocated to differentiate which colour is the correct response. When we particularly compare it against the fact that there may have been some carry over effect by having the participants run through the congruent test first. But it is shown through the p value that the t-statistic clearly falls into the critical region, and is therefore still stastically significant. 
+    </p>
+    
+
+
+
+  </body>
+</html>
